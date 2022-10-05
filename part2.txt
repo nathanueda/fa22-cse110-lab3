@@ -1,19 +1,12 @@
-Fill in the passphrases here.
-Passcode for question 1: greenEggsAndHam
-data-question2="iHateCplusplus"
-Passcode for question 3: HTMLRocks
-question-four Passcode: JavaScriptRules
-Question 5 Passcode: SvelteBeatsReact
-Question 6 Passcode: ThisIsJS
-Question 7 Passcode: YouFoundMe
-Question 8 passcode: coolcoolcool
-Question 9 passcode: 2020sucked
-10
-name="question11" content="a11yComesFirst"
-data-question12passcode="iLoveWebDev"
-
-
-btn.addEventListener('click', () => {
-  fetch('./question10.jpg');
-});
-
+1. greenEggsAndHam
+2. iHateCplusplus
+3. HTMLRocks
+4. JavaScriptRules
+5. SvelteBeatsReact
+6. ThisIsJS
+7. YouFoundMe
+8. coolcoolcool
+9. 2020sucked
+10. listenToTheBlackKeys
+11. a11yComesFirst
+12. iLoveWebDev
