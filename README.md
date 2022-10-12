@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3 - Starter
 Website Link:
-https://nathanueda.github.io/CSE-110-Lab-2/
+https://nathanueda.github.io/fa22-cse110-lab3/
