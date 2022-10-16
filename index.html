@@ -6,7 +6,93 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meeting Minutes</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="assets/favicon.png">
+
+        <link rel="stylesheet" href="mystyle.css">
+        <style>
+
+            h1[target=emphasize] {
+                background-color: yellow;
+            }
+
+
+            #date {
+                background-color: maroon;
+            }
+
+            * {
+                font-family: 'Lato', sans-serif;
+            }
+
+            @media screen and (max-width:500px) {
+                body {
+                    background-color: #00ff44;
+                }
+            }
+            .container {
+                display: flex;
+                background-color: red;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .container > div {
+                background-color: blue;
+                margin: 5px;
+                padding: 40px;
+                font-size: 20px;
+            }
+
+            .grid {
+                display: grid;
+                column-gap: 10px;
+                text-align: left;
+                padding: 40px;
+                grid-template-columns: 200px 200px 200px 200px;
+            }
+
+
+
+            div {
+                background-color: grey;
+                margin-top: 10px;
+                margin-bottom: 100px;
+                margin-right: 10px;
+                margin-left: 10px;
+
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            
+                border-top: 10px solid olive;
+                border-bottom: 10px solid olive;
+                border-left: 10px solid olive ;
+                border-right: 10px solid olive;
+
+                border-style: dashed;
+                border-color: white;
+                border-width: 100px;
+                border-radius: 100px;
+
+                max-width: 150px;
+                min-width: none;
+                position: relative;
+                left: 500px;
+            }
+
+            a.highlight:hover {
+                color: #00ff44;
+                font-size: 20px;
+            } 
+
+            a:active {
+                background-color: rgb(160, 189, 200);
+            }
+        </style>
     </head>
 
     <body>
@@ -14,6 +100,11 @@
             <div><b>Meeting Minutes</b></div>
             <nav>
                 <ul>
+                    <style>
+                        li {
+                            display: inline;
+                        }
+                    </style>
                     <li><a href="#attendance_list">Attendance List</a></li>
                     <li><a href="#meeting_agenda">Agenda</a></li>
                     <li><a href="#last_meeting">Finishing From Last Meeting</a></li>
@@ -28,8 +119,9 @@
         
         <main>
             <hr>
-            <h1>Weekly Check-Ins</h1>
-            <h3>10/04/22</h3>
+
+            <h1 target="emphasize">Weekly Check-Ins</h1>
+            <h3 id="date">10/04/22</h3>
             
 
 
@@ -38,22 +130,26 @@
             <section>
             <h2 id="attendance_list">Attendance List:</h2>
             <ul>
-                <li>Jill</li>
-                <li>John</li>
-                <li>Jeffrey</li>
+            <div class="container" >
+                <div class="container">Jill</div>
+                <div class="container">John</div>
+                <div class="container">Jeffrey</div>
+            </div>
             </ul>
             <details>
                 <summary>Absent</summary>
-                <ul>
-                    <li>Abe</li>
-                    <li>Gabe</li>
-                    <li>Flabe</li>
-                </ul>
+                <div class="grid">
+                <div class="grid">Abe</div>
+                <div class="grid">Gabe</div>
+                <div class="grid">Flabe</div>
+            </div>
             </details>
 
-            <p>Since we are getting <strong>really close</strong> to launch, it 
+            <p><a class="highlight">
+                
+                Since we are getting <strong>really close</strong> to launch, it 
                 is more important than ever that <em>everyone</em> is in
-                 attendance to each meeting.
+                 attendance to each meeting.</a>
             </p>
             </section>
             <br>
@@ -175,6 +271,30 @@
         <input type="submit" value="Submit">
         </form>
         <br><br>
+            
+        <section>
+        <div>
+            <p>Next meeting:</p>
+            <p>Monday</p>
+          <p>Oct 17</p>
+          </div>
+          
+          <p>Following meeting: Oct 24</p>
+        </section>
+
+
+
+<p>Have a great day!</p>
+<div> <p>Have a great day!</p> </div>
+
+<p>See you next time!</p>
+
+<div>
+    <p>Normal meeting notes.</p>
+    <p>Normal meeting notes.</p>
+  </div>
+  
+  <p>Emphasized meeting notes.</p>
         
             <h6><i>Thank you for attending!</i></h6>
         </footer>
