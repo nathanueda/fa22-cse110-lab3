@@ -1,0 +1,64 @@
+body {
+    /* Setting the color of the background. */
+    background-color: lightcyan
+  }
+
+  div p {
+    background-color: #FF9933;
+  }
+  
+
+  div ~ p {
+    background-color: blueviolet;
+  }
+
+  div + p {
+    background-color: forestgreen;
+  }
+
+  h1 {
+    position: fixed;
+    top: 0px;
+    color: rgb(77, 15, 90);
+    font-size: 2cm;
+    letter-spacing: 0.2pc;
+    text-align: center;
+    line-height: 20px;
+
+    background-color: grey;
+    margin: 35px 70px 50px 90px;  
+    border: 5px red;
+    border-style: dashed;
+    padding: 35px 70px 50px 90px;
+
+  }
+
+  h2 {
+    color: #FF9933;
+    text-align: left;
+    font-size: 150%;
+    line-height: 2rem;
+    text-decoration-line: underline;
+    
+  }
+
+  h3 {
+    color: hsl(300, 76%, 72%);
+    letter-spacing: 0.5ch;
+    margin: auto;
+  }
+   
+  h6 {
+    color: magenta;
+    display: none;
+  }
+  p {
+    color:red;
+    background-color: aliceblue;
+  }
+
+  h1, h1 {
+    margin: auto;
+  }
+
+
